@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: #ddd;
+    max-width: 100%; 
+}
+
+.cart-scroll {
+    animation:  infiniteScroll 10s linear infinite;
+  }
+  
+  .cart-scroll:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes infiniteScroll {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-50%); 
+    }
+    50% {
+      transform: translateX(-75);
+    }
+    75% {
+      transform: translateX(-90%); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+@import "tailwindcss";
